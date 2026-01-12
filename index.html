@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Minigun vs Zombies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hud">
+    <div id="score">Score: 0</div>
+    <div id="health">Health: 100</div>
+    <div id="instructions">
+      Move: A / D or ← → • Jump: W / ↑ / Space • Aim with mouse • Hold mouse to fire
+    </div>
+  </div>
+  <div id="game-wrap">
+    <canvas id="game"></canvas>
+    <div id="overlay" class="hidden">
+      <div id="overlay-inner">
+        <h1 id="overlay-title">You died</h1>
+        <p id="overlay-score">Score: 0</p>
+        <button id="btn-restart">Restart</button>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
